@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDR Game Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="title">
+            <h1>DDR GAME HUB</h1>
+            <p class="subtitle">Choose Your Rhythm Challenge</p>
+        </header>
+        
+        <main class="game-selector">
+            <div class="arrow-controls">
+                <button class="arrow left-arrow" id="leftArrow">
+                    <span>◀</span>
+                </button>
+                
+                <div class="game-display">
+                    <div class="game-card active" data-game="fnf">
+                        <div class="game-icon">🎵</div>
+                        <h2>Friday Night Funkin'</h2>
+                        <p>Battle opponents in rhythm-based rap battles!</p>
+                        <div class="difficulty">Difficulty: ★★★☆☆</div>
+                    </div>
+                    
+                    <div class="game-card" data-game="snake">
+                        <div class="game-icon">🐍</div>
+                        <h2>Snake</h2>
+                        <p>Classic arcade game with a rhythmic twist!</p>
+                        <div class="difficulty">Difficulty: ★★☆☆☆</div>
+                    </div>
+                    
+                    <div class="game-card" data-game="tetris">
+                        <div class="game-icon">🧱</div>
+                        <h2>Tetris</h2>
+                        <p>Stack blocks to the beat of the music!</p>
+                        <div class="difficulty">Difficulty: ★★★★☆</div>
+                    </div>
+                    
+                    <div class="game-card" data-game="run3">
+                        <div class="game-icon">🏃</div>
+                        <h2>Run 3</h2>
+                        <p>Run and jump through space tunnels!</p>
+                        <div class="difficulty">Difficulty: ★★★☆☆</div>
+                    </div>
+                </div>
+                
+                <button class="arrow right-arrow" id="rightArrow">
+                    <span>▶</span>
+                </button>
+            </div>
+            
+            <div class="controls-info">
+                <p>Use ← → arrows or click buttons to navigate</p>
+                <p>Press ENTER or click to select game</p>
+            </div>
+            
+            <button class="play-button" id="playButton">
+                <span class="play-text">START GAME</span>
+                <span class="play-icon">▶</span>
+            </button>
+        </main>
+        
+        <div class="background-effects">
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
